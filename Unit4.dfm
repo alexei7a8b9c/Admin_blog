@@ -1,0 +1,86 @@
+object Form4: TForm4
+  Left = 436
+  Top = 100
+  Width = 283
+  Height = 209
+  Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1077
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label4: TLabel
+    Left = 48
+    Top = 23
+    Width = 65
+    Height = 24
+    Caption = #1060#1048#1054':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 36
+    Top = 55
+    Width = 77
+    Height = 24
+    Caption = #1051#1086#1075#1080#1085':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 20
+    Top = 88
+    Width = 90
+    Height = 24
+    Caption = #1055#1072#1088#1086#1083#1100':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 128
+    Top = 24
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 128
+    Top = 56
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 128
+    Top = 88
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 160
+    Top = 128
+    Width = 89
+    Height = 25
+    Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+end

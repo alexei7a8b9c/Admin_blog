@@ -1,0 +1,36 @@
+//---------------------------------------------------------------------------
+
+#ifndef passwordH
+#define passwordH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <ComCtrls.hpp>
+#include <DB.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+        TButton *Button2;
+        TLabel *Label1;
+        TLabel *Label2;
+        TEdit *Edit1;
+        TEdit *Edit2;
+        TADOTable *ADOTable1;
+        TDataSource *DataSource1;
+        TADOConnection *ADOConnection1;
+        TDateTimePicker *DateTimePicker1;
+        TLabel *Label3;
+        void __fastcall Button2Click(TObject *Sender);
+        void __fastcall FormCreate(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

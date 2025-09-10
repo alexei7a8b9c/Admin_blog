@@ -1,0 +1,176 @@
+object Form5: TForm5
+  Left = 257
+  Top = 77
+  Width = 864
+  Height = 610
+  Caption = #1046#1091#1088#1085#1072#1083' '#1087#1086#1089#1077#1097#1077#1085#1080#1081
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label5: TLabel
+    Left = 240
+    Top = 504
+    Width = 65
+    Height = 24
+    Caption = #1060#1048#1054':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 504
+    Width = 90
+    Height = 24
+    Caption = #1055#1072#1088#1086#1083#1100':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 120
+    Top = 8
+    Width = 200
+    Height = 24
+    Caption = #1046#1091#1088#1085#1072#1083' '#1087#1086#1089#1077#1097#1077#1085#1080#1081
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 536
+    Top = 8
+    Width = 239
+    Height = 24
+    Caption = #1046#1091#1088#1085#1072#1083' '#1074#1074#1086#1076#1072' '#1087#1072#1088#1086#1083#1077#1081
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clOlive
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 40
+    Width = 441
+    Height = 449
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnTitleClick = DBGrid1TitleClick
+  end
+  object Edit5: TEdit
+    Left = 104
+    Top = 504
+    Width = 129
+    Height = 21
+    TabOrder = 1
+    OnChange = Edit5Change
+  end
+  object Edit6: TEdit
+    Left = 320
+    Top = 504
+    Width = 129
+    Height = 21
+    TabOrder = 2
+    OnChange = Edit6Change
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 536
+    Width = 240
+    Height = 25
+    DataSource = DataSource1
+    TabOrder = 3
+  end
+  object DBGrid2: TDBGrid
+    Left = 464
+    Top = 40
+    Width = 369
+    Height = 449
+    DataSource = DataSource2
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Button1: TButton
+    Left = 760
+    Top = 496
+    Width = 75
+    Height = 25
+    Caption = #1059#1076#1072#1083#1077#1085#1080#1077
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 624
+    Top = 496
+    Width = 131
+    Height = 25
+    Caption = #1057#1087#1080#1089#1086#1082' '#1087#1086#1083#1100#1079#1086#1074#1072#1090#1077#1083#1077#1081
+    TabOrder = 6
+    OnClick = Button2Click
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'zap_2'
+    Left = 368
+    Top = 64
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 400
+    Top = 64
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=ert.mdb;Persist Sec' +
+      'urity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 400
+    Top = 96
+  end
+  object ADOTable2: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'jornal'
+    Left = 512
+    Top = 64
+  end
+  object DataSource2: TDataSource
+    DataSet = ADOTable2
+    Left = 480
+    Top = 64
+  end
+end

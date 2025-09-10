@@ -1,0 +1,50 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit5H
+#define Unit5H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <DBGrids.hpp>
+#include <Grids.hpp>
+#include <ComCtrls.hpp>
+#include <DBCtrls.hpp>
+#include <ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm5 : public TForm
+{
+__published:	// IDE-managed Components
+        TDBGrid *DBGrid1;
+        TADOTable *ADOTable1;
+        TDataSource *DataSource1;
+        TADOConnection *ADOConnection1;
+        TLabel *Label5;
+        TLabel *Label6;
+        TEdit *Edit5;
+        TEdit *Edit6;
+        TDBNavigator *DBNavigator1;
+        TDBGrid *DBGrid2;
+        TADOTable *ADOTable2;
+        TDataSource *DataSource2;
+        TButton *Button1;
+        TLabel *Label1;
+        TLabel *Label2;
+        TButton *Button2;
+        void __fastcall DBGrid1TitleClick(TColumn *Column);
+        void __fastcall FormCreate(TObject *Sender);
+        void __fastcall Edit5Change(TObject *Sender);
+        void __fastcall Edit6Change(TObject *Sender);
+        void __fastcall Button1Click(TObject *Sender);
+        void __fastcall Button2Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TForm5(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm5 *Form5;
+//---------------------------------------------------------------------------
+#endif
